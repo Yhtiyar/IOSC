@@ -6,6 +6,7 @@ math, informatics, English language, Russian language, history, biology.
 # Prizes 
 Infomatrix Asia 2018 gold Medal. <br>
 Turkmen National Project Olympiad Regional stage 1st place
+## Angular version : 5.0.0 
 # How to run
 First of all download project and open with terminal. Then run command  `npm install`(You will need npm and Nodejs installed)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
