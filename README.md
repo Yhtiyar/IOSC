@@ -1,5 +1,13 @@
 # IOSC
-
+This is my first fullstack web project.
+“IOSC” website is the not-commercial dynamic internet website that will be used as
+distance subject olympiad. It contains 8 platforms for such subjects as physics, chemistry,
+math, informatics, English language, Russian language, history, biology.
+# Prizes 
+Infomatrix Asia 2018 gold Medal
+Turmen National Prohject Olympiad Regional stage 1st place
+# How to run
+First of all download project and open with terminal. Then run command  `npm install`(You will need npm and Nodejs installed)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
 
 ## Development server
