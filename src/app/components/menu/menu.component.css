@@ -1,0 +1,36 @@
+.main {
+    height: 766px;
+    padding-top: 30px;
+    background: url("../../../../back.png")   no-repeat;
+    background-size: cover; 
+}
+.con{
+   margin-left: 0px;
+   width: 100%;
+}
+.mt {
+   color: gold;
+   margin-left: 30px;
+   font-size: 48px;
+   margin-top:-40px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.mt2 {
+  color: gold;
+   margin-left: 60px;
+   font-size: 58px;
+   margin-top:10px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.sb{
+ 
+  margin-left: 25px;
+  margin-top: 30px;
+}
+.bttn{
+  
+  height: 50px;
+  width: 200px;
+  color: white;
+  background-color: orange;
+}

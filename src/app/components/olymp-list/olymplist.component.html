@@ -1,0 +1,80 @@
+  <div *ngIf="!sellected" class="main1 container col-12">
+   
+       <div  class="row justify-content-md-center">
+           <div class="olymp card">
+                 <div class="card-header" style="color:white; background-color:#3367D6">
+                      {{ts.getTranslate("Informatika")}}  {{ts.getTranslate("dersinden")}} {{ts.getTranslate("bäsleşik")}}  #1  <code style="  float: right;" *ngIf="uservice.currentUser.bal[1]>=0">{{uservice.currentUser.bal[1]}}</code>
+                 </div>
+                 <div class="card-body" style="padding-top:5px;">
+                     <div class="ima">
+                        <img style="margin-top:-15px;" width=95px; height=95px; src="assets/subject_icons/informatics.png">
+                  </div>
+                   <div class="card-text" style="">
+                      
+                        20.01.2018-25.01.2018
+                   </div>
+                   <a style="color:white" class="btn btn-primary" (click)="onc(1)">{{ts.getTranslate("Gatnaş")}}</a>
+                 </div>
+           </div>     
+        </div>  
+
+           <div  class="row justify-content-md-center">
+           <div class="olymp card">
+                 <div class="card-header" style="color:white; background-color:#3367D6">
+                      {{ts.getTranslate("Matematika")}}  {{ts.getTranslate("dersinden")}} {{ts.getTranslate("bäsleşik")}}  #1    <code style="  float: right;" *ngIf="uservice.currentUser.bal[2]>=0">{{uservice.currentUser.bal[2]}}</code>
+                 </div>
+                 <div class="card-body" style="padding-top:5px; ">
+                     <div class="ima">
+                        <img style="margin-top:-15px;" width=95px; height=95px; src="assets/subject_icons/math.png">
+                  </div>
+                   <div class="card-text" style="">
+                      
+                        28.01.2018-05.02.2018
+                   </div>
+                   <a style="color:white" class="btn btn-primary" (click)="onc(2)">{{ts.getTranslate("Gatnaş")}}</a>
+                 </div>
+           </div>     
+        </div> 
+       
+
+          <div  class="row justify-content-md-center">
+           <div class="olymp card">
+                 <div class="card-header " style="color:white; background-color:#3367D6">
+                    {{ts.getTranslate("Fizika")}}  {{ts.getTranslate("dersinden")}} {{ts.getTranslate("bäsleşik")}}  #1    <code style="  float: right;" *ngIf="uservice.currentUser.bal[4]>=0">{{uservice.currentUser.bal[4]}}</code>
+                 </div>
+                 <div class="card-body" style="padding-top:5px;">
+                     <div class="ima">
+                        <img style="margin-top:-15px;" class="img-fluid"  alt="Responsive image" width=95px; height=95px; src="assets/subject_icons/phisics.png">
+                  </div>
+                   <div class="card-text" style="">
+                      
+                        28.01.2018-05.02.2018
+                   </div>
+                   <a style="color:white" class="btn btn-primary" (click)="onc(4)">{{ts.getTranslate("Gatnaş")}}</a>
+                 </div>
+           </div>     
+        </div>  
+
+          <div  class="row justify-content-md-center">
+           <div class="olymp card">
+                 <div class="card-header " style="color:white; background-color:#3367D6">
+                    {{ts.getTranslate("Iňlis dili")}}  {{ts.getTranslate("dersinden")}} {{ts.getTranslate("bäsleşik")}}  #1    <code style="  float: right;" *ngIf="uservice.currentUser.bal[5]>=0">{{uservice.currentUser.bal[5]}}</code>
+                 </div>
+                 <div class="card-body" style="padding-top:5px;">
+                     <div class="ima">
+                        <img style="margin-top:-15px;" class="img-fluid"  alt="Responsive image" width=75px; height=75px; src="assets/subject_icons/english.png">
+                  </div>
+                   <div class="card-text" style="">
+                      
+                        28.01.2018-05.02.2018
+                   </div>
+                   <a style="color:white" class="btn btn-primary" (click)="onc(5)">{{ts.getTranslate("Gatnaş")}}</a>
+                 </div>
+           </div>     
+        </div>
+
+  </div>
+  <olympiad *ngIf="sellected" [sellected]="sellected" (onQuite)="onQuite()" (onEnded)="setB(sellected,$event)" ></olympiad>
+  <div class="ft con " style="margin-top:30px;">
+              ©2018  Yhtyýar Sahatow
+         </div>

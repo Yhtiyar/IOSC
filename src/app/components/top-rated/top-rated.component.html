@@ -1,0 +1,46 @@
+<table class="table d-none d-sm-table">
+  <thead class="thead" style="background-color:gold; color:white">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">{{ts.getTranslate("Ady we Familiýasy")}}</th>
+      <th scope="col">{{ts.getTranslate("Synpy")}}</th>
+      <th scope="col">{{ts.getTranslate("Welaýaty")}}</th>
+      <th scope="col ">{{ts.getTranslate("Netijesi")}}</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let student of students" >
+      <th scope="row">{{getI(student)}}</th>
+      <td>{{student.name}}
+      {{student.surname}}</td>
+    
+      <td>{{student.grade}}</td>
+      <td>{{countries[student.countryId]}}</td>
+      <td>{{student.raiting}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- - - - - - - - -for mobile- - - - - - - - -->
+<table class="table d-sm-none">
+  <thead class="thead" style="background-color:gold; color:white">
+    <tr>
+     
+     <th scope="col">{{ts.getTranslate("Ady we Familiýasy")}}</th>
+      <th scope="col">{{ts.getTranslate("Synpy")}}</th>
+      <th scope="col">{{ts.getTranslate("Welaýaty")}}</th>
+      <th scope="col ">{{ts.getTranslate("Netijesi")}}</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let student of students"  >
+     
+      <td>{{student.name}}
+      {{student.surname}}</td>
+    
+      <td>{{student.grade}}</td>
+      <td>{{countries[student.countryId]}}</td>
+      <td>{{student.raiting}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,55 @@
+.informatics{
+   
+  background : url("../../../../subject_icons/informatics.png") 100% 100% no-repeat;
+ }
+.physics{
+  background : url("../../../../subject_icons/phisics.png") 100% 100% no-repeat;
+ }
+.english{
+  background : url("../../../../subject_icons/english.png") 100% 100% no-repeat;
+ }
+.biology{
+ 
+  background : url("../../../../subject_icons/biology.png") 100% 100% no-repeat;
+ }
+.math{
+  background : url("../../../../subject_icons/math.png") 100% 100% no-repeat;
+ }
+.turkmen{
+  background : url("../../../../subject_icons/turkmen.png") 100% 100% no-repeat;
+ }
+ .history{
+  background : url("../../../../subject_icons/history.png") 100% 100% no-repeat;
+ }
+ .chemistry {
+     background : url("../../../../subject_icons/chemistry.png") 100% 100% no-repeat;
+ }
+ .russian {
+     background : url("../../../../subject_icons/russian.png") 100% 100% no-repeat;
+ }
+ .ss{
+   
+    height:70px;
+    width: 75px;
+}
+.sblock{
+
+  padding-top: 50px;
+  padding-left: 45px;
+  height: 180px;
+  width: 200px;
+  background-color: white;
+  box-shadow: 10px 10px 5px #888888;
+  background-color: rgba(255, 255, 255, 2  .0);
+
+}
+
+.sblock:hover{
+  box-shadow: 0px 0px 0px white;
+}
+.hh{
+  margin-top: 10px;
+  
+  font-size: 18px;
+  margin-left: 2px;
+}

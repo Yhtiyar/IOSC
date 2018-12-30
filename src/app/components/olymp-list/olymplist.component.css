@@ -1,0 +1,43 @@
+.main1{
+    padding-top:15px;
+    margin-top: 5px;
+    min-height: 550px;
+    width: 1000px;
+    background-color: white;
+    text-align: center;
+     box-shadow: 5px 5px 5px #888888; 
+     padding-bottom: 15px;
+}
+.olymp {
+    /*border: 3px solid black;*/
+    position: relative;
+    text-align: center;
+     box-shadow:  5px 5px 5px #B8B8B8; 
+    margin-top:25px;
+    margin-left: 5px;
+    margin-right: 5px;
+     height: 160px;
+     width: 800px;  
+    
+}
+.card-body{}
+.ima{
+   
+    height: 108px;
+    padding-top:15px;
+    float: left;
+    width:100px;
+    margin-right: -20px;
+    padding-top:-15px;
+   
+}
+.des{
+    height: 30px;
+    margin-top: 5px;
+}
+.otitle{
+     
+}
+.odesc{
+     
+}

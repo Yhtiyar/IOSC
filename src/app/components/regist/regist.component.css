@@ -1,0 +1,23 @@
+.main1{
+    
+   /*height: 766px;*/
+   text-align: center;
+}
+.profile {
+    margin-top: 5px;
+    height: 550px;
+    width: 1000px;
+   
+    background-color: white;
+}
+.exp{
+    width: 250px;
+   
+}
+.bttn{
+  margin-top:15px;
+  height: 50px;
+  width: 200px;
+  color: white;
+  background-color: orange;
+}

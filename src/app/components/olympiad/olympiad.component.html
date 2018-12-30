@@ -1,0 +1,259 @@
+
+  <div class="main1 container col-12">
+   
+       <div class="row justify-content-md-center">
+    <mat-accordion *ngIf="sellected==1">
+       <mat-expansion-panel >
+         <mat-expansion-panel-header>
+
+           <mat-panel-title>
+           Question №1
+          </mat-panel-title>
+
+          <mat-panel-description>
+            Programming language(5 bal)
+          </mat-panel-description>
+
+        </mat-expansion-panel-header>
+        <p style="font-size:18px; ">
+        Which of these is not programming language
+        </p>    
+        <mat-checkbox [checked]="checked[1]" (change)="ch(1)" style="margin-left:5px"> Pascal </mat-checkbox>
+        <mat-checkbox [checked]="checked[2]" (change)="ch(2)" style="margin-left:5px"> JavaScript </mat-checkbox>
+        <mat-checkbox [checked]="checked[3]" (change)="ch(3)" style="margin-left:5px"> Android </mat-checkbox>
+        <mat-checkbox [checked]="checked[4]" (change)="ch(4)" style="margin-left:5px"> Python </mat-checkbox>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+           Question №2 
+          </mat-panel-title>
+          <mat-panel-description>
+            Source code (10 bal)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p style="font-size:18px;">
+          If <code>n=11</code> what is the output?
+        </p>    
+         <div style="text-align:left; margin-left:25px;">
+         <p>1: Begin</p>
+         <p>2: if n mod 2 = 0 :</p>
+          <p>3:    print n/2;</p>
+          <p>4: else:</p>
+          <p>5:   print (n+1)/2;</p>
+          <p>6: End.</p>
+         </div>
+         <mat-form-field>
+          <input matInput placeholder="Answer:" name="a12" [(ngModel)]="answers[2]">
+       </mat-form-field>
+     </mat-expansion-panel>
+
+          <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title> 
+           Question №3 
+          </mat-panel-title>
+          <mat-panel-description>
+           Arithmetic rebus (20 bal)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p style="font-size:18px; ">
+           <code>(A*B+C)^2 = ABC </code> find rebus where <code>ABC</code> is the largest answer.
+        </p>    
+         <mat-form-field>
+          <input matInput placeholder="Answer:"  name="a13" [(ngModel)]="answers[3]"> 
+       </mat-form-field>
+     </mat-expansion-panel>
+
+      <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+           Question №4
+          </mat-panel-title>
+          <mat-panel-description>
+           Count of combination? (20 bal)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p style="font-size:18px; ">
+           What is the number of combination 3 elements from 5 elements.
+        </p>    
+         <mat-form-field>
+          <input matInput placeholder="Answer:"  name="a14" [(ngModel)]="answers[4]">
+       </mat-form-field>
+     </mat-expansion-panel>
+
+     <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+           Question №5
+          </mat-panel-title>
+          <mat-panel-description>
+           How much days? (25 bal)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p style="font-size:18px; ">
+           <code>27.10.1991-3.02.2018</code> how much days are between 2 dates? <code>01.01.2017-01.01.2018</code> between these days 365 days.
+        </p>    
+         <mat-form-field>
+          <input matInput placeholder="Answer:" name="a15"  [(ngModel)]="answers[5]">
+       </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+           Question №6
+          </mat-panel-title>
+          <mat-panel-description>
+           Sum of prime numbers? (20 bal)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p style="font-size:18px; ">
+          What is sum of largest 2 digit prime number and smallest 3 digit prime number
+        </p>    
+         <mat-form-field>
+          <input matInput placeholder="Answer:"  name="a16" [(ngModel)]="answers[6]">
+       </mat-form-field>
+      </mat-expansion-panel>
+ 
+    </mat-accordion> 
+
+    <mat-accordion *ngIf="sellected==2">
+       <mat-expansion-panel >
+         <mat-expansion-panel-header>
+
+           <mat-panel-title>
+           Sorag №1
+          </mat-panel-title>
+
+          <mat-panel-description>
+            Tigirler(10 bal)
+          </mat-panel-description>
+
+        </mat-expansion-panel-header>
+        <p style="font-size:18px; ">
+          Köçede çagalar welosiped sürýardiler. Welosipediň 3-tigirlisi we 2-tigirlisi bardy. Eger 60 tigir we 25 welosiped bar bolsa, näçe sany 3 tigirli 
+          welosiped bar?
+        </p>    
+         <mat-form-field>
+          <input matInput placeholder="Jogaby:" name="a11" [(ngModel)]="answers[2]">
+       </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+           Sorag №2 
+          </mat-panel-title>
+          <mat-panel-description>
+            Jem (10 bal)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p style="font-size:18px;">
+          <code>a+b+c=7</code> we <code>1/(a+b) + 1/(b+c) + 1/(c+a) = n</code>-digi belli bolsa, aşakdaky jemi tapyň 
+        </p>    
+        <p style="font-size:18px;">
+          <code>a/(b+c) + b/(c+a) + c/(a+b)</code>
+        </p> 
+         
+         <mat-form-field>
+          <input matInput placeholder="Jogaby:" name="a12" [(ngModel)]="answers[2]">
+       </mat-form-field>
+     </mat-expansion-panel>
+
+          <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title> 
+           Sorag №3 
+          </mat-panel-title>
+          <mat-panel-description>
+           Köpeltmek hasylyny tapyň (10 bal)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p style="font-size:18px; ">
+           <code>a+b=z, b=5*a, a=3</code> digi belli bolsa <code>a*b*z</code> tapyň
+        </p>    
+         <mat-form-field>
+          <input matInput placeholder="Jogaby:"  name="a13" [(ngModel)]="answers[3]"> 
+       </mat-form-field>
+     </mat-expansion-panel>
+
+      <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+           Sorag №4
+          </mat-panel-title>
+          <mat-panel-description>
+           Näçe usul bilen saýlap bolar? (20 bal)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p style="font-size:18px; ">
+           8 sany oglan bar. Tälimçi şol oglanlardan 6 adamlyk topar düzmekçi. Şol topara oglanlaryň 3-si hökman girmeli. Tälimçi näçe usul bilen 
+           topar düzüp biler?
+        </p>    
+         <mat-form-field>
+          <input matInput placeholder="Jogaby:"  name="a14" [(ngModel)]="answers[4]">
+       </mat-form-field>
+     </mat-expansion-panel>
+
+     <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+           Sorag №5
+          </mat-panel-title>
+          <mat-panel-description>
+           Näçe gün bar? (25 bal)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p style="font-size:18px; ">
+           <code>27.10.2017-3.02.2018</code> seneleriň arasynda näçe gün bar? <code>01.01.2017-01.01.2018</code> seneleriň arasynda 365 gün bar.
+        </p>    
+         <mat-form-field>
+          <input matInput placeholder="Jogaby:" name="a15"  [(ngModel)]="answers[5]">
+       </mat-form-field>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel >
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+           Sorag №6
+          </mat-panel-title>
+          <mat-panel-description>
+           Ýönekeý sanlaryň jemi? (20 bal)
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p style="font-size:18px; ">
+           Iň uly 2-belgili ýönekeý san bilen iň kiçi 3-belgili ýönekeý sanyň jemini tapyň
+        </p>    
+         <mat-form-field>
+          <input matInput placeholder="Jogaby:"  name="a16" [(ngModel)]="answers[6]">
+       </mat-form-field>
+      </mat-expansion-panel>
+ 
+    </mat-accordion> 
+
+   <button mat-button (click)="quite()"  style="margin-top:25px; background-color:#3367D6; margin-right:25px; color:white;">Yza</button>
+    <button mat-button  data-toggle="modal" data-target="#myModal" style="margin-top:25px; background-color:gold; color:white;">Barla</button>
+
+     <div  class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="margin-left:5px;">
+        <h5 class="modal-title" id="exampleModalLabel">Siz mysallary çözüp boldyňyz</h5>
+        
+      </div>
+      <div class="  modal-body">
+        Siziň gazanan balyňyz : {{barla(sellected)}}
+        <br>
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="onc()"  >Dowam et</button>
+      </div>
+    </div>
+  </div>
+
+      </div>  
+  </div>
+  

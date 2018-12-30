@@ -1,0 +1,17 @@
+<div class="body">
+<div class="container">
+
+      <form class="form-signin">
+        <h2 class="form-signin-heading">{{ts.getTranslate("Haýyş dolduryň")}}</h2>
+        <label for="inputEmail" class="sr-only">{{ts.getTranslate("E-mail adres")}}:</label>
+        <input type="email" id="inputEmail" name="ll" class="form-control" [(ngModel)]="login" placeholder="{{ts.getTranslate('E-mail adres')}}" required autofocus>
+        <label for="inputPassword" class="sr-only">{{ts.getTranslate("Parol")}}</label>
+        <input type="password" id="inputPassword"  name="pp" class="form-control" placeholder="{{ts.getTranslate('Parol')}}" [(ngModel)]="password" required>
+        <div class="checkbox">
+          
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" (click)="onLogIn()" >{{ts.getTranslate("Gir")}}</button>
+      </form>
+
+    </div>
+</div>
